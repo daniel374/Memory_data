@@ -2,6 +2,11 @@
 Gestor documental, que contempla información relacionada entre clientes, facturas, productos, ordenes de compra, ordenes de despacho
 
 # herramientas de instalación
+## Virtualenwraper_win 
+--Para crear un ambiente virtual en windows y trabajar sin inconvenientes con otras versiones de Python y Django
+Ejm ## Ambiente virtual (DJANGOmapa)
+# Url de dependencias y paquetes del Proyecto:
+Envs\DJANGOmapas\Lib\site-packages\django\contrib\admin\templates\admin
 _Framework_
 _Angulas 8_
 _Motor MYSQL_
