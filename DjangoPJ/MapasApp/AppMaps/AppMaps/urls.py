@@ -15,7 +15,23 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import url, include
+from places.views import LocalidadesListView
+from places.models import Localidades
+from places import views
+from rest_framework import routers
 
+# Routers provide an easy way of automatically determining the URL conf.
+router = routers.SimpleRouter()
+router.register(r'localidades', views.LocalidadViewSet)
+router.register(r'users', views.UserViewSet)
+router.register(r'groups', views.GroupViewSet)
+
+# Wire up our API using automatic URL routing.
+# Additionally, we include login URLs for the browsable API.
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('places.urls')),
 ]
+
+urlpatterns += router.urls
