@@ -52,14 +52,14 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'AppMaps.urls'
+ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [ 
-            os.path.join(BASE_DIR, 'AppMaps/places/templates'),
-            'DjangoPJ/MapasApp/AppMaps/places/templates',
+            os.path.join(BASE_DIR, 'AppMaps/server/places/templates'),
+            'DjangoPJ/MapasApp/AppMaps/server/places/templates',
             os.path.join(BASE_DIR, 'templates/admin'),
             ],
         'APP_DIRS': True,
@@ -74,7 +74,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'AppMaps.wsgi.application'
+WSGI_APPLICATION = 'config.wsgi.application'
 
 
 # Database

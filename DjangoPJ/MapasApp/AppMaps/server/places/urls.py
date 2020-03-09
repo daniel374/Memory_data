@@ -14,5 +14,5 @@ router.register(r'groups', views.GroupViewSet)
 
 urlpatterns = [
     path(r'', views.LocalidadesListView.as_view()),
-     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
